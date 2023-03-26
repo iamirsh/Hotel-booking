@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hotel Room Booking Cart</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Hotel Room Booking Cart</h1>
+		<div class="rooms">
+			<h2>Rooms Available</h2>
+			<div class="room">
+				<h3>Standard Room</h3>
+				<p>Price: ₹1000 per night</p>
+				<button class="add-to-cart" data-name="Standard Room" data-price="1000">Add to Cart</button>
+			</div>
+			<div class="room">
+				<h3>Premium Room</h3>
+				<p>Price: ₹2000 per night</p>
+				<button class="add-to-cart" data-name="Premium Room" data-price="2000">Add to Cart</button>
+			</div>
+		</div>
+		<div class="cart">
+			<h2>Cart</h2>
+			<ul class="cart-items"></ul>
+			<p class="total">Total: ₹0</p>
+			<button class="checkout">Checkout</button>
+		</div>
+	</div>
+	<div class="overlay">
+		<div class="popup">
+			<h2>Enter your details to complete the booking</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" required>
+				<br>
+				<label for="email">Email:</label>
+				<input type="email" id="email" required>
+				<br>
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" required>
+				<br>
+				<label for="address">Address:</label>
+				<input type="text" id="address" required>
+				<br>
+				<button type="submit" class="submit">Submit</button>
+			</form>
+			<button class="close-popup">Close</button>
+		</div>
+	</div>
+</body>
+</html>
