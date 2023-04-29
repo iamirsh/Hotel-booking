@@ -23,6 +23,7 @@ $(document).ready(function() {
 		cart.push(item);
 	}
 
+	
 	function displayCart() {
 		var cartItems = $('.cart-items');
 		cartItems.empty();
