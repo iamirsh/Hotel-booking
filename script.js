@@ -22,6 +22,7 @@ $(document).ready(function() {
 		};
 		cart.push(item);
 	}
+	
 
 	
 	function displayCart() {
